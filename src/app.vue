@@ -1,26 +1,21 @@
 <template>
-  <div>app
-    <bar />
-    <foo />
+  <!-- 客户端激活 -->
+  <div id="app">app
+    <router-link to="/">bar</router-link>
+    <router-link to="/foo">foo</router-link>
+    <router-view></router-view>
   </div>
  
 </template>
 
 <script>
-  import Bar from './components/bar';
-  import Foo from './components/foo'
-  export default {
-    components: {
-      Bar,
-      Foo
-    }
-  }
+
 </script>
 
 <style>
 div{
-  width:400px;
-  height:400px;
+  width:200px;
+  height:200px;
   border:1px solid red;
 }
 </style>
